@@ -1,0 +1,12 @@
+#N canvas 0 0 1830 1048 10;
+#X obj 135 96 mtof;
+#X obj 135 125 s cf;
+#X obj 181 54 key;
+#X obj 181 79 t float bang;
+#X obj 181 238 vline~;
+#X msg 181 207 1 1000 \, 0.4 1000 1000 \, 0 1000 3000;
+#X connect 0 0 1 0;
+#X connect 2 0 3 0;
+#X connect 3 0 0 0;
+#X connect 3 0 5 0;
+#X connect 5 0 4 0;

@@ -1,0 +1,30 @@
+#N canvas 1160 147 1172 781 10;
+#X obj 602 206 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 425 109 hradio 15 1 0 4 empty empty empty 0 -8 0 10 -262144
+-1 -1 0;
+#X obj 515 109 hsl 55 15 2 12 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 1000 1;
+#X obj 675 109 hsl 55 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 1500 1;
+#X obj 591 109 hradio 15 1 0 4 empty empty empty 0 -8 0 10 -262144
+-1 -1 0;
+#X text 425 78 SHAPE;
+#X text 510 78 HARMONICS;
+#X text 593 78 OCTAVE;
+#X text 671 77 VOLUME;
+#X obj 602 264 mtof;
+#X msg 602 235 44;
+#X obj 512 281 sawh~;
+#X obj 513 414 dac~;
+#X obj 513 363 *~;
+#X obj 575 348 hsl 55 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 1300 1;
+#X connect 0 0 10 0;
+#X connect 2 0 11 0;
+#X connect 9 0 11 1;
+#X connect 10 0 9 0;
+#X connect 11 0 13 0;
+#X connect 13 0 12 0;
+#X connect 13 0 12 1;
+#X connect 14 0 13 1;
